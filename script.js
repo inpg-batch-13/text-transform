@@ -1,5 +1,23 @@
 function textTransformator(text) {
-  // your code here
+  var split = text.split('')
+
+  var hasil = []
+for (i = 0 ; i < split.length ; i++){
+  
+  if (split[i] === 'e'){
+     hasil.push('3')
+  } else if ( split[i] === 'i'){
+    hasil.push('1')
+  } else if ( split[i] === 'a'){
+    hasil.push('4')
+  } else if ( split[i] === 'o'){
+    hasil.push('0')
+  } else {
+    hasil.push (split[i])
+  }
+}
+return hasil.join('')
+
 }
 
 // TEST CASE:
